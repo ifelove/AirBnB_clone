@@ -1,96 +1,65 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/x-icon" href="images/icon.png" />
-
-    <link rel="stylesheet" href="styles/103-common.css" />
-    <link rel="stylesheet" href="styles/103-header.css" />
-    <link rel="stylesheet" href="styles/103-footer.css" />
-    <link rel="stylesheet" href="styles/103-filters.css" />
-    <link rel="stylesheet" href="styles/103-places.css" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="images/icon.png">
+    <link rel="stylesheet" href="styles/103-common.css">
+    <link rel="stylesheet" href="styles/103-header.css">
+    <link rel="stylesheet" href="styles/103-footer.css">
+    <link rel="stylesheet" href="styles/103-filters.css">
+    <link rel="stylesheet" href="styles/103-places.css">
     <title>AirBnB clone</title>
   </head>
   <body>
     <header>
-      <div
-        class="mobile_nav"
-        role="navigation"
-        aria-label="Navigate through site content"
-      >
-        <label
-          for="main_check"
-          class="main_nav_burguer"
-          aria-label="Responsive popup menu"
-          >|||</label
-        >
-        <input
-          type="checkbox"
-          id="main_check"
-          name="main_check"
-          class="main_nav_check"
-          aria-hidden="true"
-          tabindex="0"
-        />
-        <nav>
-          <ul class="nav_bar_level1">
-            <li>
-              <label for="second_check"><span>States</span></label>
-              <input
-                type="checkbox"
-                name="second_check"
-                id="second_check"
-                aria-hidden="true"
-              />
-              <ul>
-                <li><span>Arizona</span></li>
-                <li><span>California</span></li>
+      <div class="mobile_nav" role="navigation" aria-label="Navigate through site content">
+        <label for="main_check" class="main_nav_burguer" aria-label="Responsive popup menu">|||</label>
+        <input type="checkbox" id="main_check" name="main_check" class="main_nav_check" aria-hidden="true" tabindex=0>
+          <nav>
+              <ul class="nav_bar_level1">
+                <li>
+                    <label for="second_check"><span>States</span></label>
+                    <input type="checkbox" name="second_check" id="second_check" aria-hidden="true">
+                  <ul>
+                    <li><span>Arizona</span></li>
+                    <li><span>California</span></li>
+                  </ul>
+                  </li>
+                <li>
+                  <label for="third_check"><span>Amenities</span></label>
+                  <input type="checkbox" name="second_check" id="third_check" aria-hidden="true">
+                  <ul>
+                    <li><span>Internet</span></li>
+                    <li><span>Tv</span></li>
+                    <li><span>Wifi</span></li>
+                    <li><span>Kitchen</span></li>
+                    <li><span>Iron</span></li>
+                  </ul>
+                  </li>
               </ul>
-            </li>
-            <li>
-              <label for="third_check"><span>Amenities</span></label>
-              <input
-                type="checkbox"
-                name="second_check"
-                id="third_check"
-                aria-hidden="true"
-              />
-              <ul>
-                <li><span>Internet</span></li>
-                <li><span>Tv</span></li>
-                <li><span>Wifi</span></li>
-                <li><span>Kitchen</span></li>
-                <li><span>Iron</span></li>
-              </ul>
-            </li>
-          </ul>
-        </nav>
-        <!-- final del main_nav_bar -->
+        </nav><!-- final del main_nav_bar -->
       </div>
     </header>
-
     <div class="container">
       <section class="filters" role="navigation">
         <div class="locations">
           <h3>States</h3>
           <h4>California, Arizona...</h4>
           <ul class="popover">
-            <li>
-              <h2>Arizona:</h2>
+            <li><h2>Arizona:</h2>
               <ul>
                 <li>Page</li>
                 <li>Page2</li>
               </ul>
             </li>
-            <li>
-              <h2>California:</h2>
+            <li><h2>California:</h2>
               <ul>
                 <li>San Francisco</li>
                 <li>Los Altos</li>
               </ul>
             </li>
-          </ul>
+            </ul>
         </div>
         <div class="amenities">
           <h3>Amenities</h3>
@@ -102,62 +71,42 @@
             <li>Iron</li>
           </ul>
         </div>
-        <button type="button" name="button">
-          <div class="btn-area">
-            <img
-              src="./images/searchIcon.png"
-              class="searchIcon"
-              alt=""
-            />Search
-          </div>
-        </button>
-      </section>
-      <!-- end fiter-->
+        <button type="button" name="button">Search</button>
+      </section> <!-- end fiter-->
 
       <section class="places">
         <h1>Places</h1>
-        <article>
-          <!-- My home -->
+        <article><!-- My home -->
           <div class="article_places_header">
-            <h2>Artola Dunes</h2>
+            <h2>My home</h2>
             <div class="price_by_night">$80</div>
           </div>
           <div class="information">
-            <div class="max_guest">5 Guests</div>
-            <div class="number_rooms">3 Bedroom</div>
-            <div class="number_bathrooms">2 Bathroom</div>
-          </div>
-          <!-- end information -->
+            <div class="max_guest">2 Guests</div>
+            <div class="number_rooms">1 Bedroom</div>
+            <div class="number_bathrooms">1 Bathroom</div>
+          </div><!-- end information -->
           <div class="user">
-            <p><b>Owner:</b> John Wick</p>
-          </div>
-          <!-- end user -->
+            <p><b>Owner:</b> John Lennon</p>
+          </div><!-- end user -->
           <div class="description">
-            <p>
-              Views of the Artola dunes and magazine-worthy decor are ready to
-              fill camera rolls at this recently restored Marbella home. Its
-              red-tiled roof and central courtyard exude traditional charm,
-              while clean-lined pieces and woven accents evoke what’s hot in
-              modern design. Cross the dunes on the boardwalk and connect with
-              the beach and the 160-kilometer Senda Litoral coastal walk.
-            </p>
-          </div>
-          <!-- end description -->
+            <p>This is a lovely 1 bathroom apartament that can accommodate 2 people. It locates at the center of Shanghai and next to subway line 1, 1 stop to People Square, 2 stops to Bund, 3 stops to Jungan Temle.</p>
+          </div><!-- end description -->
           <div class="amenities">
             <h2>Amenities</h2>
             <ul>
               <li>
                 <div class="places_amenities_pet_friendly"></div>
                 Pet friendly
-              </li>
+            </li>
               <li>
                 <div class="places_amenities_tv"></div>
                 Tv
-              </li>
+            </li>
               <li>
                 <div class="places_amenities_wifi"></div>
                 Wifi
-              </li>
+            </li>
             </ul>
           </div>
           <div class="reviews">
@@ -173,44 +122,33 @@
               </li>
             </ul>
           </div>
-        </article>
-        <!-- end My home -->
+        </article><!-- end My home -->
 
         <article>
-          <h2>Golden Beach</h2>
+          <h2>Tiny house</h2>
           <div class="price_by_night">$65</div>
           <div class="information">
             <div class="max_guest">4 Guests</div>
             <div class="number_rooms">2 Bedrooms</div>
             <div class="number_bathrooms">1 Bathroom</div>
-          </div>
-          <!-- end information -->
+          </div><!-- end information -->
           <div class="user">
             <p><b>Owner:</b> Aysuarex</p>
-          </div>
-          <!-- end user -->
+          </div><!-- end user -->
           <div class="description">
-            <p>
-              This modern Marbella home is mere moments from the golden beach.
-              Listen to the sounds of the vivid Mediterranean lulling in the
-              distance. Inside, sophisticated décor is bathed in sunlight. Dense
-              foliage creates a natural curtain of privacy. The turquoise pool
-              invites you in for a splash. Golf courses are a few minutes away
-              as well as world-famous Puerto Banús.
-            </p>
-          </div>
-          <!-- end description -->
+            <p>Our place is a privete, afffordable satan-alone guest house centrally located just minutes to French Quarters, downtown th Fair Grounds (Jazz Fest) and City Park. The guest house is a quaint, 400 suare ft. with a full bath, mini kitchen, & livin room. The extra high cellings make the home feel more spacious. The sofa converts to bed also. We have a hand made counter area that adds character to the room and a great porch/deck to relax on and have a glass of Merlot.</p>
+          </div><!-- end description -->
           <div class="amenities">
             <h2>Amenities</h2>
             <ul>
               <li>
                 <div class="places_amenities_pet_friendly"></div>
                 Pet friendly
-              </li>
+            </li>
             </ul>
           </div>
           <div class="reviews">
-            <h2>5 Review</h2>
+            <h2>1 Review</h2>
             <ul>
               <li>
                 <h3>From Max the 15th August 2022</h3>
@@ -225,43 +163,34 @@
         </article>
 
         <article>
-          <h2>Villa Sierra</h2>
-          <div class="price_by_night">$100</div>
+          <h2>A suite</h2>
+          <div class="price_by_night">$190</div>
           <div class="information">
-            <div class="max_guest">3 Guests</div>
-            <div class="number_rooms">2 Bedroom</div>
-            <div class="number_bathrooms">1 Bathroom</div>
-          </div>
-          <!-- end information -->
+            <div class="max_guest">5 Guests</div>
+            <div class="number_rooms">3 Bedroom</div>
+            <div class="number_bathrooms">2 Bathroom</div>
+          </div><!-- end information -->
           <div class="user">
-            <p><b>Owner:</b> Mick Jackson</p>
-          </div>
-          <!-- end user -->
+            <p><b>Owner:</b> Mick Jagger</p>
+          </div><!-- end user -->
           <div class="description">
-            <p>
-              Minutes from Cape Town’s hottest attractions, this secluded
-              mountain villa offers the perfect escape for those who prefer
-              privacy. Spread across 4-stories, with beautiful indoor/outdoor
-              entertaining areas, there’s no shortage of inspiring mountain
-              views. Spend hot days by the pool
-            </p>
-          </div>
-          <!-- end description -->
+            <p>First loft built by Holbies. It contains a decked terrace, jacuzzi, firepit, rabbits garden, two rooms, two balconies, entrance gate, private garden, private parking, BBQ area, AC in each bedroom, technological equipment, luxury beds, and mountain views. Ideal for architecture lovers, romantic dates, or having a good time. It is a unique space of his kind. Only pets that do not harm rabbits are allowed.</p>
+          </div><!-- end description -->
           <div class="amenities">
             <h2>Amenities</h2>
             <ul>
               <li>
                 <div class="places_amenities_pet_friendly"></div>
                 Pet friendly
-              </li>
+            </li>
               <li>
                 <div class="places_amenities_tv"></div>
                 Tv
-              </li>
+            </li>
               <li>
                 <div class="places_amenities_wifi"></div>
                 Wifi
-              </li>
+            </li>
             </ul>
           </div>
           <div class="reviews">
@@ -275,46 +204,37 @@
           </div>
         </article>
 
-        <article>
-          <!-- My home -->
+        <article><!-- My home -->
           <div class="article_places_header">
-            <h2>The Jade House</h2>
+            <h2>My house</h2>
             <div class="price_by_night">$50</div>
           </div>
           <div class="information">
             <div class="max_guest">2 Guests</div>
             <div class="number_rooms">1 Bedroom</div>
             <div class="number_bathrooms">1 Bathroom</div>
-          </div>
-          <!-- end information -->
+          </div><!-- end information -->
           <div class="user">
             <p><b>Owner:</b>John Seena</p>
-          </div>
-          <!-- end user -->
+          </div><!-- end user -->
           <div class="description">
-            <p>
-              Escape to a place with nothing around but the jungle and ocean at
-              The Jade House. Tucked into the forest in Escaleras, between the
-              beach towns of Dominical and Uvita, this ingeniously designed
-              Costa Rica vacation rental is the spot to make holiday memories.
-            </p>
-          </div>
-          <!-- end description -->
+            <p>This is a lovely 1 bathroom apartament that can accommodate 2 people. It locates at the center of Shanghai and next to subway line 1, 1 stop to People Square, 2 stops to Bund, 3 stops to Jungan Temle.</p>
+          </div><!-- end description -->
           <div class="amenities">
             <h2>Amenities</h2>
             <ul>
               <li>
                 <div class="places_amenities_pet_friendly"></div>
                 Pet friendly
-              </li>
+            </li>
               <li>
                 <div class="places_amenities_tv"></div>
                 Tv
-              </li>
+            </li>
               <li>
                 <div class="places_amenities_wifi"></div>
                 Wifi
-              </li>
+            </li>
             </ul>
           </div>
           <div class="reviews">
@@ -330,50 +250,39 @@
               </li>
             </ul>
           </div>
-        </article>
-        <!-- end My home -->
+        </article><!-- end My home -->
 
-        <article>
-          <!-- My home -->
+        <article><!-- My home -->
           <div class="article_places_header">
-            <h2>Chateau de Laurel</h2>
+            <h2>Otaku rooms</h2>
             <div class="price_by_night">$79</div>
           </div>
           <div class="information">
             <div class="max_guest">2 Guests</div>
             <div class="number_rooms">1 Bedroom</div>
             <div class="number_bathrooms">1 Bathroom</div>
-          </div>
-          <!-- end information -->
+          </div><!-- end information -->
           <div class="user">
             <p><b>Owner:</b> John Lennon</p>
-          </div>
-          <!-- end user -->
+          </div><!-- end user -->
           <div class="description">
-            <p>
-              Just off North Beverly Hills Drive, this classical French style
-              estate is in prime location for enjoying all this iconic area has
-              to offer. With an incredible amount of indoor and outdoor space,
-              it's perfect for large scale entertaining, extended family
-              vacations.
-            </p>
-          </div>
-          <!-- end description -->
+            <p>This is a lovely 1 bathroom apartament that can accommodate 2 people. It locates at the center of Shanghai and next to subway line 1, 1 stop to People Square, 2 stops to Bund, 3 stops to Jungan Temle.</p>
+          </div><!-- end description -->
           <div class="amenities">
             <h2>Amenities</h2>
             <ul>
               <li>
                 <div class="places_amenities_pet_friendly"></div>
                 Pet friendly
-              </li>
+            </li>
               <li>
                 <div class="places_amenities_tv"></div>
                 Tv
-              </li>
+            </li>
               <li>
                 <div class="places_amenities_wifi"></div>
                 Wifi
-              </li>
+            </li>
             </ul>
           </div>
           <div class="reviews">
@@ -389,50 +298,39 @@
               </li>
             </ul>
           </div>
-        </article>
-        <!-- end My home -->
+        </article><!-- end My home -->
 
-        <article>
-          <!-- My home -->
+        <article><!-- My home -->
           <div class="article_places_header">
-            <h2>Lux Mare II</h2>
+            <h2>Donkey Kong Country</h2>
             <div class="price_by_night">$80</div>
           </div>
           <div class="information">
             <div class="max_guest">8 Guests</div>
             <div class="number_rooms">1 Bedroom</div>
             <div class="number_bathrooms">1 Bathroom</div>
-          </div>
-          <!-- end information -->
+          </div><!-- end information -->
           <div class="user">
             <p><b>Owner:</b> John Lennon</p>
-          </div>
-          <!-- end user -->
+          </div><!-- end user -->
           <div class="description">
-            <p>
-              Set above the striking white cliffs outside Lagos, this new villa
-              offers all the great aspects of the Algarve with space-age style
-              and layout. With an emphasis on horizontal space, experience
-              sweeping views of the sparkling Atlantic, massive living areas, a
-              broad terrace, spacious gym and a floating staircase
-            </p>
-          </div>
-          <!-- end description -->
+            <p>This is a lovely 1 bathroom apartament that can accommodate 2 people. It locates at the center of Shanghai and next to subway line 1, 1 stop to People Square, 2 stops to Bund, 3 stops to Jungan Temle.</p>
+          </div><!-- end description -->
           <div class="amenities">
             <h2>Amenities</h2>
             <ul>
               <li>
                 <div class="places_amenities_pet_friendly"></div>
                 Pet friendly
-              </li>
+            </li>
               <li>
                 <div class="places_amenities_tv"></div>
                 Tv
-              </li>
+            </li>
               <li>
                 <div class="places_amenities_wifi"></div>
                 Wifi
-              </li>
+            </li>
             </ul>
           </div>
           <div class="reviews">
@@ -448,10 +346,9 @@
               </li>
             </ul>
           </div>
-        </article>
-        <!-- end My home -->
-      </section>
-      <!-- end section -->
+        </article><!-- end My home -->
+
+        </section> <!-- end section -->
     </div>
     <footer aria-label="Footer brand information">
       <p>Best School</p>
